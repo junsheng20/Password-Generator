@@ -34,6 +34,7 @@ function copyPassword() {
     console.log(message);
     image.src = "images/tick.png";
     image.style.pointerEvents = "none";
+    passwordBox.blur();
   } catch (err) {
     console.error("Error copying to clipboard:", err);
   }
